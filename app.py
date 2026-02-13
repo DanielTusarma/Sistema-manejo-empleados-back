@@ -38,4 +38,13 @@ def create_app():
     return app
 
 if __name__ == "__main__":
-    create_app().run(debug=os.getenv("FLASK_ENV") == "development")
+    app = create_app()
+
+    port = int(os.getenv("PORT", 5000))  # usa 5000 si no existe PORT
+    debug_mode = os.getenv("FLASK_ENV") == "development"
+
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=debug_mode
+    )
