@@ -1,6 +1,6 @@
 # Sistema de manejo de empleados
 
-Aplicación fullstack para la gestión de empleados utilizando arquitectura cliente-servidor y API REST.
+Aplicación fullstack con Python y Angular para la gestión de empleados utilizando arquitectura cliente-servidor y APIREST.
 
 ## Tecnologías
 
